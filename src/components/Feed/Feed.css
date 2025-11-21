@@ -1,0 +1,276 @@
+.feed-page {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Stories Section */
+.stories-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.story {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.story img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #ff0066;
+  object-fit: cover;
+  padding: 2px;
+}
+
+.story p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.add-post-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Posts Section */
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post-card {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.post-header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.post-header span {
+  font-weight: bold;
+}
+
+.post-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.post-actions {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.likes {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.like-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+  margin-right: 10px;
+}
+
+.like-icon.liked {
+  color: red;
+}
+
+.caption {
+  padding: 0 10px 10px;
+}
+/*logout button*/
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #cb9696;
+  color: #ac5757;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff0000;
+  color: #fff;
+  transform: scale(1.1);
+}
+.like-icon {
+  cursor: pointer;
+  color: #000;
+
+}
+.like-icon.liked {
+  color: red;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* input aur button ke beech space */
+  margin-top: 10px; /* thoda spacing upar se */
+}
+
+.add-comment input {
+/* input pura available space le */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-comment button {
+  background-color: #4caf50; /* button ka background color */
+  color: white; /* button text color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-comment button:hover {
+  background-color: #45a049; /* hover effect */
+}
+.comments-count {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.comments-list {
+  margin-top: 8px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.comment-profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+/* Container for editing post */
+.edit-post {
+  background-color: #f9f9f9; /* light gray background for edit mode */
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title input */
+.edit-post input {
+  width: 50%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.edit-post input:focus {
+  border-color: #007bff; /* blue border on focus */
+}
+
+/* Description textarea */
+.edit-post textarea {
+  width: 50%;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+  min-height: 60px;
+  transition: border-color 0.3s;
+}
+
+.edit-post textarea:focus {
+  border-color: #007bff;
+}
+
+/* Save button */
+.edit-post .save-btn {
+  align-self: flex-start;
+  background-color: #28a745; /* green button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-post .save-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* small scale effect on hover */
+}
+
+/* Optional: Add cancel button (if you want) */
+.edit-post .cancel-btn {
+  align-self: flex-end;
+  margin-right: 10px;
+  background-color: #dc3545; /* red button */
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-post .cancel-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
